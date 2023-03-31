@@ -1,10 +1,10 @@
 package com.example.jav1001_cambrian_course_select_app.model
 
 class Course {
-    var courseCode:String=""
-    var name:String=""
-    var description:String=""
-    var professor:String=""
+    lateinit var courseCode:String
+    lateinit var name:String
+    lateinit var description:String
+    lateinit var professor:String
 
 
     constructor(){}
@@ -15,7 +15,7 @@ class Course {
         this.professor=professor
     }
 
-    fun getCourseList(): List<Course>{
+    public  fun getCourseList(): List<Course>{
         var courseList =mutableListOf<Course>()
         courseList.add(Course("WEB-1001","App Development for Web","In this course, students will discover the core concepts of developing software for the web. Students will use a\n" +
                 "variety of programming tools, design elements, data types, controls, objects, and browsers","Brent Ritchie"))

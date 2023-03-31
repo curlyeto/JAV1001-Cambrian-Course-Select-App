@@ -12,4 +12,8 @@ class User {
         this.email=email
         this.programOfStudy=programOfStudy
     }
+    fun getUser(): User{
+        val user:User=User("Ertugrul","test@gmail.com","Mobile Application Development")
+        return  user
+    }
 }

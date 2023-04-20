@@ -94,6 +94,7 @@ class MainActivity : AppCompatActivity() {
                 val sharedPref = getSharedPreferences("course-app", Context.MODE_PRIVATE)
                 val editor = sharedPref.edit()
                 editor.remove("studentNumber").apply()
+                // Routing the new activity we have created.
                 val intent = Intent(this, LandingPage::class.java)
                 startActivity(intent)
                 true
